@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping  >
+
+    <class name="cn.itcast.entity.Info" table="t_info">
+        <id name="info_id" column="info_id">
+            <generator class="uuid"></generator>
+        </id>
+        <property name="info_name" type="text" length="200"></property>
+        <property name="info_value" type="text" length="2000"></property>
+        <property name="info_time"></property>
+        <property name="info_type" ></property>
+    </class>
+</hibernate-mapping>
